@@ -1,0 +1,159 @@
+.activity-timeline {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .activity-timeline-header {
+    padding: 0 20px;
+  }
+
+  .activity-timeline-body {
+    flex: 1;
+    overflow-y: auto;
+    background: url("../../img/time-line.svg") 37px 0 repeat-y;
+    background-size: 2px auto;
+  }
+
+  .activity-timeline-search {
+    position: relative;
+    margin: 3px 0;
+
+    &:before {
+      @extend [class^="fpp-icon-"];
+      content: $fpp-icon-search;
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: rem(13px);
+    }
+
+    .form-control {
+      padding: 5px 5px 5px 50px;
+      @include placeholder {
+        color: $input-placeholder-color;
+      }
+
+      &,
+      &:focus,
+      &:hover {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .activity-timeline-group-header {
+    font-size: rem(12px);
+    line-height: 1;
+    font-weight: 700;
+    color: #FBFCFD;
+    background: #DCE6F0;
+    padding: 4px 20px 4px 70px;
+    text-transform: uppercase;
+  }
+
+  .activity-timeline-list {
+    padding: 25px 20px;
+  }
+
+  .activity-timeline-item {
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.activity-success {
+      .activity-timeline-item-time {
+        border-color: $brand-success;
+      }
+
+      .activity-timeline-item-info {
+        &:after {
+          border-color: $brand-success;
+        }
+      }
+    }
+
+    &.activity-danger {
+      .activity-timeline-item-time {
+        border-color: $brand-danger;
+      }
+
+      .activity-timeline-item-info {
+        &:after {
+          border-color: $brand-danger;
+        }
+      }
+    }
+  }
+  .activity-timeline-item-show-more {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A2B5CF;
+    font-size: rem(9px);
+    line-height: 1;
+    cursor: pointer;
+    @include hover-focus {
+      color: $link-hover-color;
+    }
+  }
+
+  .activity-timeline-item-time {
+    background: #FBFCFD;
+    border: 1px solid $body-color;
+    border-radius: 6px;
+    text-align: center;
+    padding: 3px 0;
+    max-width: 35px;
+    flex-basis: 35px;
+    &_rounded {
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .activity-timeline-item-time-icon {
+    font-size: rem(21px);
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+
+  .activity-timeline-item-time-value {
+    font-size: rem(10px);
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  .activity-timeline-item-info {
+    text-transform: uppercase;
+    font-size: rem(12px);
+    line-height: 1;
+    padding: 0 15px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      //transform: translateY(-50%);
+      border-bottom: 1px solid $body-color;
+    }
+  }
+
+  .activity-timeline-item-info-row {
+    padding: 3px 0;
+  }
+}

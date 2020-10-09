@@ -1,0 +1,15 @@
+mixin spacer(spacerHeight)
+    table.spacer(cellspacing="0" cellpadding="0" style="margin:0; padding:0;")
+        tbody
+            tr
+                td(height=spacerHeight, style="font-size:" + spacerHeight + "px; line-height: " + spacerHeight + "px; -mso-line-height: " + spacerHeight + "px;")
+
+mixin spacerH(spacerHWidth)
+    td.spacer-h(width=spacerHWidth, height='1' style="width:" + spacerHWidth + "px; height: 1px; line-height: 1px; font-size: 0", align="left")
+
+mixin btn(btnBg, btnLink)
+    - var btnLink = btnLink || '#'
+    - var btnBg = btnBg || primaryColor
+
+    a(href=btnLink, target='_blank').btn
+        img(src="img/" + btnBg)

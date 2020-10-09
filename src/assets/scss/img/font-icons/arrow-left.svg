@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="15px" viewBox="0 0 9 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
+    <title>arrow-left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Backend-admin-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard---activity-details" transform="translate(-843.000000, -1572.000000)" fill="#31314F" fill-rule="nonzero">
+            <g id="activity" transform="translate(822.000000, 1506.000000)">
+                <g id="row-1" transform="translate(0.000000, 18.000000)">
+                    <path d="M23.5866574,55.5 L29.2576144,49.829043 C29.6760333,49.4106241 29.6760333,48.732233 29.2576144,48.3138142 C28.8391955,47.8953953 28.1608045,47.8953953 27.7423856,48.3138142 L21.3138142,54.7423856 C20.8953953,55.1608045 20.8953953,55.8391955 21.3138142,56.2576144 L27.7423856,62.6861858 C28.1608045,63.1046047 28.8391955,63.1046047 29.2576144,62.6861858 C29.6760333,62.267767 29.6760333,61.5893759 29.2576144,61.170957 L23.5866574,55.5 Z" id="arrow-left"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

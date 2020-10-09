@@ -1,0 +1,21 @@
+mixin footer()
+    - footerText = footerText || '© 2019 ForPeeps Payments All rights reserved'
+
+    table(width="100%" border="0" cellspacing="0" cellpadding="0" align="center").footer
+        tr
+            td
+                +spacer(16)
+        tr
+            td(align="center")
+                p
+                    span.fallback-text!= footerText
+        tr
+            td(align="center")
+                a(href="#")
+                    span.fallback-text.text-sm Terms and Conditions
+                span.text-sm  | 
+                a(href="#")
+                    span.fallback-text.text-sm Privacy Policy
+        tr
+            td
+                +spacer(27)

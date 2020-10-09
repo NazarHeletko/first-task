@@ -1,0 +1,63 @@
+extends ../layouts/layout
+
+block vars
+
+block content
+    table.content(align='center')
+        tr
+            td
+               +spacer(30)
+        tr
+            td
+                table.table-full-width.text-center
+                    tbody
+                        tr
+                            td
+                                img(src='img/admin-icon.png', alt='Admin icon').img-inline
+                        tr
+                            td
+                                +spacer(15)
+                        tr
+                            td
+                                .text-md.fallback-text
+                                    i Accept Support
+                                    |  role invitation
+                        tr
+                            td
+                                +spacer(15)
+                        tr
+                            td.hr
+
+        tr
+            td
+                +spacer(30)
+        tr
+            td
+                p
+                    span.fallback-text Hi,
+                p
+                    span.fallback-text Email address
+                    span.email
+                        font.email.fallback-text  sam.separd@forpeeps.eu
+                    span.fallback-text  is used to invite you to join ForPeeps admin portal. To accept the invite, please tap the button below:
+
+                table.table-full-width.text-center
+                    tbody
+                        tr
+                            td(colspan="3")
+                                +spacer(10)
+                        tr
+                            +spacerH(18)
+                            td.btn
+                                a(href="#")
+                                    span.fallback-text Accept invite
+                            +spacerH(18)
+                        tr
+                            td(colspan="3")
+                                +spacer(30)
+                p
+                    span.fallback-text This link will expire three hours after this email was sent.
+                p
+                    span.fallback-text Thanks,
+                    br
+                    span.fallback-text ForPeeps Team

@@ -1,0 +1,152 @@
+%logo-container {
+  .logo-container {
+    width: 60px;
+    margin: 33px auto 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.auth-card {
+  max-width: 436px;
+  margin: 0 auto;
+  display: block;
+  @include media-breakpoint-up(sm) {
+    padding: 0 33px;
+  }
+}
+
+.login-page {
+  .card-login {
+    border-radius: $border-radius-large;
+    padding-bottom: $padding-base-horizontal;
+
+    .btn-wd {
+      min-width: 180px;
+    }
+
+    @extend %logo-container;
+
+    &.card-plain {
+      @include input-coloured-bg(
+        $opacity-5,
+        $white-color,
+        $white-color,
+        $transparent-bg,
+        $opacity-1,
+        $opacity-2
+      );
+
+      .input-group-addon,
+      .form-group.no-border .input-group-addon,
+      .input-group.no-border .input-group-addon {
+        color: $opacity-8;
+      }
+    }
+    .card-footer {
+      padding: 23px 15px 35px;
+    }
+  }
+
+  .link {
+    font-size: 10px;
+    color: $white-color;
+    text-decoration: none;
+  }
+}
+
+.google-qr {
+  margin: 41px 0 20px;
+}
+
+.register-page {
+  @extend %logo-container;
+}
+
+.full-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > .content,
+  & > .footer {
+    position: relative;
+    z-index: 4;
+  }
+
+  &.section-image {
+    position: initial;
+  }
+
+  & > .content {
+    padding-bottom: 110px;
+    padding-top: 100px;
+    width: 100%;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    .container {
+      color: $white-color;
+    }
+  }
+
+  .full-page-background {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &.pricing-page {
+    .description {
+      margin-bottom: 65px;
+    }
+  }
+
+  &.register-page {
+    .info-horizontal {
+      padding: 0px 0px 20px;
+    }
+
+    .info-horizontal {
+      text-align: left !important;
+
+      .icon {
+        margin-top: 0;
+
+        > i {
+          font-size: 2em;
+        }
+
+        &.icon-circle {
+          width: 65px;
+          height: 65px;
+          max-width: 65px;
+          margin-top: 8px;
+
+          i {
+            display: table;
+            margin: 0 auto;
+            line-height: 3.5;
+            font-size: 1.9em;
+          }
+        }
+      }
+      .description {
+        overflow: hidden;
+      }
+    }
+  }
+}

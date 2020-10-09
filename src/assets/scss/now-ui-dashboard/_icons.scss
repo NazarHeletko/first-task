@@ -1,0 +1,20 @@
+.fpp-icon-phone-custom {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    z-index: 0;
+    content: $fpp-icon-phone-d;
+    color: #757AA1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:before {
+    @extend [class^="fpp-icon-"];
+    content: $fpp-icon-phone;
+    position: relative;
+    z-index: 1;
+  }
+}

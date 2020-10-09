@@ -1,0 +1,36 @@
+$email-font-family: "Lato", Arial, sans-serif;
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$primary: #8155F4;
+
+// Start with assigning color names to specific hex values.
+$white:  #fff !default;
+$black:  #000 !default;
+$red:    #ff5e80;
+$orange: #f0ad4e !default;
+$yellow: #f3d636;
+$green:  #1d9f4d;
+$blue:   #56b3bf;
+$teal:   #66b4e5;
+$pink:   #ff5b77 !default;
+$purple: #613d7c !default;
+
+// Create grayscale
+$gray-dark:                 #292b2c !default;
+$gray:                      #464a4c !default;
+$gray-light:                #a2a6a9;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $primary;
+$brand-success:             $green !default;
+$brand-info:                $teal !default;
+$brand-warning:             $orange !default;
+$brand-danger:              $red !default;
+$brand-inverse:             $gray-dark !default;
+$link-color:                $primary;
+$body-color:                #31314F;

@@ -1,0 +1,7 @@
+{
+    "spriteConfig": {
+        "icons": {
+            "src": ["../src/static/img/sprites/icons/*.*"]
+        }
+    }
+}

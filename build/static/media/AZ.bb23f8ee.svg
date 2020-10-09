@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AZ</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+        <path d="M14,8 C14.4113508,8 14.7936966,8.12418541 15.1115914,8.33711027 C15.074919,8.33457876 15.037605,8.33333333 15,8.33333333 C14.0795254,8.33333333 13.3333333,9.07952542 13.3333333,10 C13.3333333,10.9204746 14.0795254,11.6666667 15,11.6666667 L15.1115914,11.6628897 C14.7936966,11.8758146 14.4113508,12 14,12 C12.8954305,12 12,11.1045695 12,10 C12,8.8954305 12.8954305,8 14,8 Z M15.3333333,9.33333333 C15.7015232,9.33333333 16,9.63181017 16,10 C16,10.3681898 15.7015232,10.6666667 15.3333333,10.6666667 C14.9651435,10.6666667 14.6666667,10.3681898 14.6666667,10 C14.6666667,9.63181017 14.9651435,9.33333333 15.3333333,9.33333333 Z" id="path-3"></path>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-508.000000, -28.000000)">
+            <g id="AZ" transform="translate(508.000000, 28.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <rect id="Rectangle-2" fill="#24AAD5" mask="url(#mask-2)" x="0" y="0" width="28" height="6.66666667"></rect>
+                <rect id="Rectangle-2" fill="#21BF75" mask="url(#mask-2)" x="0" y="13.3333333" width="28" height="6.66666667"></rect>
+                <rect id="Rectangle-2" fill="#ED1845" mask="url(#mask-2)" x="0" y="6.66666667" width="28" height="6.66666667"></rect>
+                <g id="Oval-68" mask="url(#mask-2)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

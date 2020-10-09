@@ -1,0 +1,97 @@
+.statistic-table {
+  font-size: rem(12px);
+  text-transform: uppercase;
+  line-height: 1.6em;
+  overflow-x: auto;
+  .statistic-table-thead {
+    border-top: 1px solid $body-color;
+    border-bottom: 1px solid $body-color;
+    padding: 0 20px;
+    .statistic-table-col {
+      color: $body-color;
+      font-weight: bold;
+    }
+  }
+  &-tbody {
+    padding: 0 20px;
+    &:first-child {
+      > .statistic-table-row,
+      .statistic-table-row-group:first-child .statistic-table-row {
+        &:first-child {
+          border-top: 1px solid #D7E2EC;
+        }
+      }
+    }
+  }
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #D7E2EC;
+    }
+    &-action {
+      cursor: pointer;
+      .statistic-table-col {
+        &:first-child {
+          color: $body-color;
+        }
+        &:last-child {
+          color: $brand-info-light;
+        }
+      }
+    }
+  }
+  &_border-bottom {
+    .statistic-table-row {
+      border-bottom: 1px solid #D7E2EC;
+    }
+  }
+  &_top-space {
+    .statistic-table-row {
+      &:first-child {
+        padding-top: 25px;
+      }
+    }
+  }
+  &-row-group {
+    margin: 0 -20px;
+    padding: 0 20px;
+    &:not(:last-of-type) {
+      border-bottom: 1px dashed #D7E2EC;
+    }
+  }
+  &-col {
+    padding: 6px 0;
+    &:first-child {
+      padding-right: 10px;
+      color: $brand-info-light;
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+  .statistic-action-icon {
+    font-size: rem(6px);
+    margin-left: 6px;
+  }
+  .statistic-table-form-control {
+    text-transform: uppercase;
+    border: none;
+    text-align: right;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+    color: $link-color;
+    appearance: none;
+    width: 100%;
+    background: $input-bg-color;
+  }
+}
+
+.icon-status {
+  color: #C2C9D5;
+  margin-right: 10px;
+  &_active {
+    color: $success-color;
+  }
+}

@@ -1,0 +1,59 @@
+.card-main-info {
+  .card-header {
+    text-align: center;
+    padding: 20px 20px 0;
+    > .dropdown {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+    }
+  }
+  .card-title {
+    font-size: 17px;
+    color: #31314F;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .card-header-icon {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+  &-scroll {
+    display: flex;
+    flex-direction: column;
+    max-height: 705px;
+    .card-body {
+      flex: 1;
+      overflow: auto;
+    }
+  }
+}
+
+.card-main-info-activity {
+  .card-body {
+    height: 675px;
+  }
+}
+
+.card-title-action {
+  position: relative;
+  padding: 0 20px;
+  font-size: rem(18px);
+  .time-icon {
+    font-size: rem(16px);
+    margin-right: 5px;
+  }
+  .back-btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: rem(15px);
+    line-height: 1;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+    }
+  }
+}

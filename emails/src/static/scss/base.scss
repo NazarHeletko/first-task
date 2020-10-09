@@ -1,0 +1,47 @@
+@import "variables";
+
+p,
+h1,h2,h3,h4,h5,h6 {
+    font-family: $email-font-family;
+    line-height: 1.3;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $body-color;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+h1 {font-size: 24px;}
+h2 {font-size: 21px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
+a {
+    font-family: $email-font-family;
+    line-height: 1.33;
+    font-weight: normal;
+    color: $link-color;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    clear: both;
+    display: block;
+    max-width: 100%;
+    outline: 0;
+    text-decoration: none;
+    width: auto;
+    border: 0;
+}
+

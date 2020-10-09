@@ -1,0 +1,31 @@
+include ../base/variables
+include ../base/helpers
+
+include ../base/header
+include ../base/footer
+
+block vars
+
+doctype html
+html(lang='en')
+
+    include ../base/head
+
+    body
+        table.body.main-wrapper(bgcolor=bgColor, align='center')
+            tr
+                td
+                    +header()
+            tr
+                td
+                    center.wrapper
+                        .webkit
+                            table.container(bgcolor='#ffffff', align='center', width='436')
+                                tr
+                                    td
+                                        block content
+
+                            +footer(footerText)
+            tr
+                td
+                    +spacer(20)

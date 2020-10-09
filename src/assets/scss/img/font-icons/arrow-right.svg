@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="9px" viewBox="0 0 6 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Backend-admin-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard" transform="translate(-1125.000000, -1873.000000)" fill="#A2B5CF">
+            <g id="activity" transform="translate(822.000000, 1506.000000)">
+                <g id="expences-" transform="translate(0.000000, 134.000000)">
+                    <g id="ask-money" transform="translate(22.000000, 216.000000)">
+                        <path d="M282.551994,21.5 L285.954569,18.0974258 C286.20562,17.8463745 286.20562,17.4393398 285.954569,17.1882885 C285.703517,16.9372372 285.296483,16.9372372 285.045431,17.1882885 L281.188288,21.0454314 C280.937237,21.2964827 280.937237,21.7035173 281.188288,21.9545686 L285.045431,25.8117115 C285.296483,26.0627628 285.703517,26.0627628 285.954569,25.8117115 C286.20562,25.5606602 286.20562,25.1536255 285.954569,24.9025742 L282.551994,21.5 Z" id="arrow-right" transform="translate(283.571429, 21.500000) rotate(-180.000000) translate(-283.571429, -21.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

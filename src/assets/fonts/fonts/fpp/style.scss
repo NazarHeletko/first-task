@@ -1,0 +1,294 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?xe3x65') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?xe3x65') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?xe3x65##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="fpp-icon-"], [class*=" fpp-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fpp-icon-reset-1 {
+  &:before {
+    content: $fpp-icon-reset-1; 
+  }
+}
+.fpp-icon-reset-2 {
+  &:before {
+    content: $fpp-icon-reset-2; 
+  }
+}
+.fpp-icon-resend {
+  &:before {
+    content: $fpp-icon-resend; 
+  }
+}
+.fpp-icon-user {
+  &:before {
+    content: $fpp-icon-user; 
+  }
+}
+.fpp-icon-plus {
+  &:before {
+    content: $fpp-icon-plus; 
+  }
+}
+.fpp-icon-caret-r {
+  &:before {
+    content: $fpp-icon-caret-r; 
+  }
+}
+.fpp-icon-caret {
+  &:before {
+    content: $fpp-icon-caret; 
+  }
+}
+.fpp-icon-export {
+  &:before {
+    content: $fpp-icon-export; 
+  }
+}
+.fpp-icon-arrow-right {
+  &:before {
+    content: $fpp-icon-arrow-right; 
+  }
+}
+.fpp-icon-arrow-left {
+  &:before {
+    content: $fpp-icon-arrow-left; 
+  }
+}
+.fpp-icon-cloud-arrows {
+  &:before {
+    content: $fpp-icon-cloud-arrows; 
+  }
+}
+.fpp-icon-company {
+  &:before {
+    content: $fpp-icon-company; 
+  }
+}
+.fpp-icon-web-transactions {
+  &:before {
+    content: $fpp-icon-web-transactions; 
+  }
+}
+.fpp-icon-revenue {
+  &:before {
+    content: $fpp-icon-revenue; 
+  }
+}
+.fpp-icon-sort-desc-b {
+  &:before {
+    content: $fpp-icon-sort-desc-b; 
+  }
+}
+.fpp-icon-sort-asc-b {
+  &:before {
+    content: $fpp-icon-sort-asc-b; 
+  }
+}
+.fpp-icon-sort {
+  &:before {
+    content: $fpp-icon-sort; 
+  }
+}
+.fpp-icon-sort-asc {
+  &:before {
+    content: $fpp-icon-sort-asc; 
+  }
+}
+.fpp-icon-sort-desc {
+  &:before {
+    content: $fpp-icon-sort-desc; 
+  }
+}
+.fpp-icon-oval {
+  &:before {
+    content: $fpp-icon-oval; 
+  }
+}
+.fpp-icon-uncheck {
+  &:before {
+    content: $fpp-icon-uncheck; 
+  }
+}
+.fpp-icon-check {
+  &:before {
+    content: $fpp-icon-check; 
+  }
+}
+.fpp-icon-paper-plane {
+  &:before {
+    content: $fpp-icon-paper-plane; 
+  }
+}
+.fpp-icon-credit {
+  &:before {
+    content: $fpp-icon-credit; 
+  }
+}
+.fpp-icon-chart {
+  &:before {
+    content: $fpp-icon-chart; 
+  }
+}
+.fpp-icon-bank {
+  &:before {
+    content: $fpp-icon-bank; 
+  }
+}
+.fpp-icon-ellipsis {
+  &:before {
+    content: $fpp-icon-ellipsis; 
+  }
+}
+.fpp-icon-add {
+  &:before {
+    content: $fpp-icon-add; 
+  }
+}
+.fpp-icon-reset-2fa {
+  &:before {
+    content: $fpp-icon-reset-2fa; 
+  }
+}
+.fpp-icon-reset {
+  &:before {
+    content: $fpp-icon-reset; 
+  }
+}
+.fpp-icon-trash {
+  &:before {
+    content: $fpp-icon-trash; 
+  }
+}
+.fpp-icon-pause {
+  &:before {
+    content: $fpp-icon-pause; 
+  }
+}
+.fpp-icon-bell {
+  &:before {
+    content: $fpp-icon-bell; 
+  }
+}
+.fpp-icon-message {
+  &:before {
+    content: $fpp-icon-message; 
+  }
+}
+.fpp-icon-telephone {
+  &:before {
+    content: $fpp-icon-telephone; 
+  }
+}
+.fpp-icon-profit {
+  &:before {
+    content: $fpp-icon-profit; 
+  }
+}
+.fpp-icon-search {
+  &:before {
+    content: $fpp-icon-search; 
+  }
+}
+.fpp-icon-world {
+  &:before {
+    content: $fpp-icon-world; 
+  }
+}
+.fpp-icon-round-arrows {
+  &:before {
+    content: $fpp-icon-round-arrows; 
+  }
+}
+.fpp-icon-user-group {
+  &:before {
+    content: $fpp-icon-user-group; 
+  }
+}
+.fpp-icon-settings {
+  &:before {
+    content: $fpp-icon-settings; 
+  }
+}
+.fpp-icon-settings-d {
+  &:before {
+    content: $fpp-icon-settings-d; 
+  }
+}
+.fpp-icon-api {
+  &:before {
+    content: $fpp-icon-api; 
+  }
+}
+.fpp-icon-api-d {
+  &:before {
+    content: $fpp-icon-api-d; 
+  }
+}
+.fpp-icon-eshop {
+  &:before {
+    content: $fpp-icon-eshop; 
+  }
+}
+.fpp-icon-logout {
+  &:before {
+    content: $fpp-icon-logout; 
+  }
+}
+.fpp-icon-logout-d {
+  &:before {
+    content: $fpp-icon-logout-d; 
+  }
+}
+.fpp-icon-phone {
+  &:before {
+    content: $fpp-icon-phone; 
+  }
+}
+.fpp-icon-phone-d {
+  &:before {
+    content: $fpp-icon-phone-d; 
+  }
+}
+.fpp-icon-cloud {
+  &:before {
+    content: $fpp-icon-cloud; 
+  }
+}
+.fpp-icon-cloud-d {
+  &:before {
+    content: $fpp-icon-cloud-d; 
+  }
+}
+.fpp-icon-eshop-d {
+  &:before {
+    content: $fpp-icon-eshop-d; 
+  }
+}
+.fpp-icon-spinner {
+  &:before {
+    content: $fpp-icon-spinner; 
+  }
+}
+

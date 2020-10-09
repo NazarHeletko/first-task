@@ -1,0 +1,87 @@
+.panel-header-chart {
+  height: 270px;
+  margin-bottom: 10px;
+}
+
+.chart-actions {
+  padding: 30px 0 20px;
+  text-align: center;
+}
+
+.users-online {
+  padding: 2px 0;
+  font-size: 11px;
+  line-height: 1.1;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  @include media-breakpoint-up(sm) {
+    padding-left: 65px;
+    margin-bottom: 0;
+  }
+}
+
+.users-online-icon {
+  margin-right: 7px;
+}
+
+.users-online-counter {
+  margin-right: 7px;
+}
+
+.chart-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0 15px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  li {
+    margin-left: 8px;
+    font-size: 11px;
+    line-height: 1.1;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include media-breakpoint-up(sm) {
+      justify-content: flex-start;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    &.active,
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: $brand-secondary;
+    }
+  }
+}
+
+.chartShort {
+  width: 80px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+div#chartjs-tooltip div {
+  white-space: nowrap
+}
+
+div.jvectormap-tip {
+  background: #31314F;
+  color: white;
+  border-radius: 6px;
+  &:after {
+    content: '';
+    position: absolute;
+    border-width: 5px 7px 0;
+    border-style: solid;
+    border-color: #31314F transparent transparent;
+    top: 100%;
+    right: 10px;
+  }
+}

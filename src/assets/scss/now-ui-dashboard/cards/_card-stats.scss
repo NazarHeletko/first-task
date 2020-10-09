@@ -1,0 +1,113 @@
+%card-stats {
+  hr {
+    margin: 5px 15px;
+  }
+}
+
+.card-stats {
+  @extend %card-stats;
+
+  .statistics {
+    position: relative;
+    text-align: center;
+    padding: 15px 0;
+
+    .title {
+      margin-bottom: 0;
+    }
+    .stats-title {
+      margin-bottom: 5px;
+      color: $brand-info-light;
+      font-weight: $font-weight-normal;
+    }
+
+    &.statistics-horizontal,
+    &.statistics-horizontal .info-title {
+      padding: 0;
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+  }
+
+  .stats-information {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    .stats-text {
+      font-size: 29px;
+    }
+
+    .stats-details {
+      display: block;
+      color: $default-color;
+    }
+  }
+
+  .dots {
+    text-align: right;
+
+    .dot {
+      background-color: $black-color;
+      height: 3px;
+      width: 3px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+
+  [class*="col-"] {
+    .statistics::after {
+      position: absolute;
+      right: 0;
+      top: 20px;
+      width: 1px;
+      height: calc(100% - 40px);
+      content: "";
+      background: #C2D1E5;
+    }
+  }
+  [class*="col-"]:last-child {
+    .statistics::after {
+      display: none;
+    }
+  }
+  /* Customize the label (the container) */
+  .statistics-checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    min-height: 22px;
+    user-select: none;
+    margin-top: -15px;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 22px;
+      width: 22px;
+      font-size: 22px;
+      color: #D7E2EC;
+      transition: $transition-base;
+    }
+    &:hover,
+    &:focus {
+      input ~ .checkmark {
+        transform: scale(1.1);
+      }
+    }
+    input:checked ~ .checkmark {
+      @extend .fpp-icon-check;
+    }
+  }
+}

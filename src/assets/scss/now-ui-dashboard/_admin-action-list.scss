@@ -1,0 +1,22 @@
+.admin-action-list {
+  &__item {
+    border-top: 1px solid #D7E2EC;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px 0;
+  }
+  &__info {
+    position: relative;
+    max-width: 100%;
+    flex: 0 0 auto;
+    width: auto;
+  }
+  &__actions {
+    position: relative;
+    max-width: 100%;
+    flex: 0 0 auto;
+    width: auto;
+    margin-left: auto;
+    text-align: right;
+  }
+}

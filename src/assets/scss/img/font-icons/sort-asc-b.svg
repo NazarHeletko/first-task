@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="10px" viewBox="0 0 5 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
+    <title>sort-asc-b</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Backend-admin-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard" transform="translate(-239.000000, -1319.000000)" fill="#31314F" fill-rule="nonzero">
+            <g id="general-data-table" transform="translate(108.000000, 1224.000000)">
+                <g id="table" transform="translate(40.000000, 40.000000)">
+                    <g id="table-header" transform="translate(26.000000, 52.000000)">
+                        <g id="arrows-" transform="translate(65.000000, 3.000000)">
+                            <path d="M0.322866183,3.82607354 C0.541544606,3.62926296 0.541544606,3.29773704 0.322866183,3.10092646 C0.119456607,2.91785785 -0.200984385,2.91785785 -0.404393961,3.10092646 L-2.07106063,4.60092646 C-2.28973905,4.79773704 -2.28973905,5.12926296 -2.07106063,5.32607354 L-0.404393961,6.82607354 C-0.304371114,6.9160941 -0.174192738,6.96325 -0.0404861111,6.96325 C0.0926049496,6.96325 0.22255018,6.91593592 0.322472412,6.82692356 C0.542100161,6.62926296 0.542100161,6.29773704 0.323421738,6.10092646 L-0.384581322,5.46372371 L6.70730176,5.4634375 C6.99316663,5.4634375 7.23506944,5.24572497 7.23506944,4.9634375 C7.23506944,4.68115003 6.99316663,4.4634375 6.70729167,4.4634375 L-0.385125192,4.46326577 L0.322866183,3.82607354 Z" id="Shape" transform="translate(2.500000, 4.963437) rotate(-270.000000) translate(-2.500000, -4.963437) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

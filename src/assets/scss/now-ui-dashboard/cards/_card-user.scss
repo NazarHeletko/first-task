@@ -1,0 +1,82 @@
+.card-user {
+  @include media-breakpoint-up(sm) {
+    max-width: 330px;
+  }
+
+  .card-header {
+    padding-top: 30px;
+  }
+
+  .card-body {
+    min-height: 140px;
+  }
+}
+
+.card {
+  &.top-outside-avatar {
+    margin-top: 57px;
+    .brief-card-information {
+      margin-top: -57px;
+    }
+  }
+}
+
+.brief-card-information {
+  text-align: center;
+  text-transform: none;
+  .title {
+    font-size: rem(17px);
+  }
+  .user-status,
+  .online-status {
+    font-size: rem(11px);
+    margin-right: 5px;
+    color: #C2C9D5;
+    &.active {
+      color: $brand-success;
+    }
+  }
+}
+
+.avatar-wr {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+  img {
+    max-width: 100%;
+  }
+
+  .thumbnail {
+    width: 84px;
+    height: 84px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid $card-bg;
+  }
+  .img-actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(#748FB2, .7);
+    text-align: center;
+    &:hover,
+    &:focus {
+      background: #748FB2;
+    }
+  }
+  .btn-img-action {
+    font-size: 8px;
+    color: #FBFCFD;
+    line-height: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+}

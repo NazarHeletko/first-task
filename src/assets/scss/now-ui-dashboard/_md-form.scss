@@ -1,0 +1,267 @@
+// Forms basic
+// Input + label wrapper styles
+
+.md-form {
+  // Text inputs
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=url],
+  input[type=time],
+  input[type=date],
+  input[type=datetime-local],
+  input[type=tel],
+  input[type=number],
+  input[type=search-md],
+  input[type=search],
+  textarea.md-textarea {
+    // General Styles
+    transition: $input-transition;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid $input-border-color;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+
+    // Focused input style
+    &:focus:not([readonly]) {
+      //box-shadow: 0 1px 0 0 $input-md-focus-color;
+      border-bottom: 1px solid $input-md-border-focus-color;
+
+      // Focused label style
+      + label {
+        color: $input-md-focus-color;
+        margin-bottom: 0;
+        z-index: 3;
+      }
+    }
+
+    // Form message shared styles
+    //+label:after {
+    //  content: "";
+    //  position: absolute;
+    //  top: $input-label-after-top;
+    //  display: block;
+    //  opacity: 0;
+    //  transition: $input-label-after-transition;
+    //}
+
+  }
+
+  // Valid input style
+  //&.has-success {
+  //  input.form-control {
+  //    &,
+  //    &:focus {
+  //      border-bottom: 1px solid $input-success-color;
+  //    }
+  //  }
+  //}
+
+  // Invalid input style
+  &.has-danger {
+    input.form-control {
+      &,
+      &:focus {
+        border-bottom: 1px solid $input-error-color;
+      }
+    }
+  }
+
+  &.has-success .form-control-sm + label:after,
+  &.has-success .form-control-sm:focus + label:after {
+    top: $input-label-valid-top-sm;
+  }
+
+  &.has-danger .form-control-sm + label:after,
+  &.has-danger .form-control-sm:focus + label:after {
+    top: $input-label-invalid-top-sm;
+  }
+
+  > input[type=date]:not(.browser-default) + label {
+    transform: translateY(-27px) scale(0.7);
+    transform-origin: 0 0;
+  }
+
+  > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+  > input[type=time]:not(.browser-default) + label {
+    transform: translateY(-25px);
+    transform-origin: 0 0;
+    font-size: .8rem;
+  }
+
+  // Input with label
+  .form-control {
+    margin: 0 0 $input-form-control-margin-bottom 0;
+    border-radius: 0;
+    padding: $input-form-control-padding-top $input-form-control-padding-x $input-form-control-padding-bottom $input-form-control-padding-x;
+    // background-image: none;
+    background-color: transparent;
+    height: auto;
+
+    &:focus {
+      box-shadow: none;
+      // background: transparent;
+    }
+
+    &:disabled,
+    &[readonly] {
+      border-bottom: 1px solid $gray-100;
+      background-color: transparent;
+    }
+  }
+
+  @include make-input($input-validate-mb, $input-label-font-size, $input-label-active-font-size, $input-prefix-top, $input-prefix-font-size, $input-prefix-margin-left, $input-prefix-width, $input-form-text-ml);
+  position: relative;
+  margin-top: $input-md-form-margin-top;
+  margin-bottom: $input-md-form-margin-bottom;
+
+  label {
+    line-height: 1.2;
+    position: absolute;
+    top: 0;
+    left: $input-form-control-padding-x;
+    right: $input-form-control-padding-x;
+    font-size: 1rem;
+    transition: transform .2s ease-out, color .2s ease-out;
+    transform-origin: 0 100%;
+    transform: translateY(10px);
+    cursor: text;
+    color: $input-label-color;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    z-index: 1;
+  }
+
+  &.active {
+    label {
+      transform: translateY(-5px) scale(0.7);
+      z-index: 3;
+    }
+  }
+
+  .prefix {
+    position: absolute;
+    transition: $input-prefix-transition;
+
+    &.active {
+      color: $input-md-focus-color;
+    }
+  }
+
+  &.form-lg {
+    @include make-input($input-validate-mb-lg, $input-label-font-size-lg, $input-label-active-font-size-lg, $input-prefix-top-lg, $input-prefix-font-size-lg, $input-prefix-margin-left-lg, $input-prefix-width-lg, $input-form-text-ml-lg);
+  }
+
+  &.form-sm {
+    @include make-input($input-validate-mb-sm, $input-label-font-size-sm, $input-label-active-font-size-sm, $input-prefix-top-sm, $input-prefix-font-size-sm, $input-prefix-margin-left-sm, $input-prefix-width-sm, $input-form-text-ml-sm);
+  }
+
+  // Textarea
+  textarea {
+    &.md-textarea {
+      overflow-y: hidden;
+      padding: $textarea-padding 0;
+      resize: none;
+    }
+
+    &.md-textarea-auto {
+      padding: 0;
+      padding-top: $textarea-padding;
+    }
+
+    //Label color for textarea
+    ~ label {
+      &.active {
+        color: $input-md-focus-color;
+      }
+    }
+  }
+  &_px-0 {
+    .form-control {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    label {
+      left: 0;
+    }
+  }
+}
+
+.form-split {
+  position: relative;
+  .form-control {
+    padding-right: 30%;
+    padding-left: 0;
+    padding-bottom: rem(5px);
+  }
+  label {
+    padding-right: 30%;
+    left: 0;
+  }
+  .dropdown {
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: $input-form-control-padding-top;
+    padding-bottom: $input-form-control-padding-bottom;
+    z-index: 3;
+    .btn {
+      font-size: rem(14px);
+      color: #A2B5CF;
+    }
+    .dropdown-menu {
+      line-height: 1.5;
+    }
+  }
+}
+
+.invalid-feedback {
+  position: absolute;
+  top: 0;
+  left: 1.21rem;
+  right: 1.21rem;
+  transition: transform .2s ease-out, color .2s ease-out;
+  transform-origin: 0% 100%;
+  transform: translateY(-10px) scale(0.7);
+  z-index: 3;
+}
+
+// .was-validated-form .form-control:invalid {
+//   &~.invalid-feedback {
+//     display: block;
+//   }
+//   &~label {
+//     display: none;
+//   }
+// }
+
+.was-validated-form .form-group.has-danger {
+  .invalid-feedback {
+    display: block;
+  }
+
+  label {
+    display: none;
+  }
+}
+
+// Custom fille input browser support
+//@each $lang,
+//$text in $custom-mdb-file-text {
+//  .custom-file-input {
+//    &:lang(#{$lang}) {
+//      &~.custom-file-label {
+//        &::after {
+//          content: $text;
+//        }
+//      }
+//    }
+//  }
+//}

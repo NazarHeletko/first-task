@@ -1,0 +1,19 @@
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='Content-Type', content='text/html charset=UTF-8')
+    title FPP
+    // styles will be embedded
+    link(href='css/base.css', rel='stylesheet', type="text/css", data-embed)
+    //styles will be inlined
+    link(href='css/style.css', rel='stylesheet', type="text/css")
+
+    // link tag will be preserved and styles will not be inlined or embedded
+    link(href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap" rel="stylesheet" data-embed-ignore)
+    .
+        <!--[if mso]>
+            <style type=”text/css”>
+                .fallback-text {
+                    font-family: Arial, sans-serif;
+                }
+            </style>
+        <![endif]-->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="37px" viewBox="0 0 45 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
+    <title>paper-plane</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="send-money" transform="translate(0.000000, -4.000000)" fill="#31314F" fill-rule="nonzero">
+            <path d="M44.8741621,7.36364489 C44.9616473,6.95315714 45.0014948,6.57936264 45.0000362,6.24255143 C44.9913217,4.29410315 43.177366,3.61765827 41.6191743,4.20073472 L2.06468706,19.4037403 C-0.631303801,20.4529221 -0.584518711,21.9609382 1.60853243,22.644806 L11.7053399,25.7952738 L24.8712153,19.4037403 L17.4657542,28.5804276 L34.0071022,40.4949819 C35.8814299,41.5441637 37.1845565,41.0119667 37.6874962,38.7733225 L44.8741621,7.36364489 Z" id="paper-plane"></path>
+        </g>
+    </g>
+</svg>

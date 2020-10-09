@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>MV</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-268.000000, -604.000000)">
+            <g id="MV" transform="translate(268.000000, 604.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <rect id="Mask-Copy" fill="#F32249" mask="url(#mask-2)" x="0" y="0" width="28" height="20"></rect>
+                <rect id="Rectangle-1568" fill="#15A04F" mask="url(#mask-2)" x="4" y="4" width="20" height="12" rx="0.666666667"></rect>
+                <path d="M15.3333333,5.33333333 C15.6764834,5.33333333 16.0109831,5.37037046 16.3330527,5.44066526 C14.2362903,5.89880998 12.6666667,7.76610236 12.6666667,10 C12.6666667,12.2338976 14.2362903,14.10119 16.3328225,14.5591619 C16.0109831,14.6296295 15.6764834,14.6666667 15.3333333,14.6666667 C12.7560045,14.6666667 10.6666667,12.5773288 10.6666667,10 C10.6666667,7.42267117 12.7560045,5.33333333 15.3333333,5.33333333 Z" id="Oval-12" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

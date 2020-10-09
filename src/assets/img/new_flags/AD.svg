@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AD</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-172.000000, -28.000000)">
+            <g id="AD" transform="translate(172.000000, 28.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <rect id="Mask-Copy" fill="#1537D1" mask="url(#mask-2)" x="0" y="0" width="28" height="20"></rect>
+                <rect id="Mask" fill="#EA3058" mask="url(#mask-2)" x="13.3333333" y="0" width="14.6666667" height="20"></rect>
+                <rect id="Rectangle-2" fill="#FFCF3C" mask="url(#mask-2)" x="9.33333333" y="0" width="9.33333333" height="20"></rect>
+                <polygon id="Rectangle-139-Copy" fill="#FFEDB1" mask="url(#mask-2)" points="12.6666667 8.66666667 14 8.66666667 14 9.33333333 12.6666667 9.33333333"></polygon>
+                <path d="M15.0665374,8.39489763 L15.4415896,10.6785707 C15.4092668,10.946949 15.2747377,11.1880997 15.0822696,11.3651924 C14.8810676,11.5503212 14.6151696,11.6666667 14.330079,11.6666667 L14.330079,11.6666667 L13.669921,11.6666667 C13.3848946,11.6666667 13.1182368,11.5509462 12.9165675,11.3653873 C12.7157804,11.1806402 12.5782803,10.9254984 12.5545201,10.6403761 L12.5545201,10.6403761 L12.4118856,8.92876276 L15.0665374,8.39489763 Z" id="Rectangle-137" stroke="#D32E28" stroke-width="0.666666667" mask="url(#mask-2)"></path>
+                <polygon id="Rectangle-139" fill="#D32E28" mask="url(#mask-2)" points="12.6666667 9.33333333 15.3333333 9.33333333 15.3333333 10 14.6666667 10 13.3333333 10 12.6666667 10"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
