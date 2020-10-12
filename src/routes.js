@@ -42,7 +42,7 @@ let routes = [
   {
     path: "/translations",
     name: "Translations",
-    icon: "fpp-icon-phone",
+    icon: "fpp-icon-world",
     component: TranslationsContainer,
     layout: "/admin"
   },

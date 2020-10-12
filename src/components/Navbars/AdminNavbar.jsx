@@ -15,6 +15,7 @@
 
 */
 import React from "react";
+import'../../assets/css/admin-navbar.css'
 // used for making the prop types of this component
 import PropTypes from "prop-types";
 
@@ -83,6 +84,7 @@ class AdminNavbar extends React.Component {
   render() {
     return (
       // add or remove classes depending if we are on full-screen-maps page or not
+        <div className='languages-align'>
       <Navbar
         color={
           window.location.href.indexOf("full-screen-maps") !== -1
@@ -90,7 +92,7 @@ class AdminNavbar extends React.Component {
             : this.state.color
         }
         expand="lg"
-        className="navbar-sticky">
+        className={`navbar-sticky ${this.props.brandText === 'Translations' ? 'languages-align' : ''}`}>
         <Container fluid>
           <div className="navbar-wrapper">
             <div className="navbar-toggle">
@@ -105,10 +107,11 @@ class AdminNavbar extends React.Component {
                 <span className="navbar-toggler-bar bar3" />
               </button>
             </div>
-            <NavbarBrand href="/">{this.props.brandText}</NavbarBrand>
+            <NavbarBrand href="/">{this.props.brandText === 'Translations' ? 'Languages' : this.props.brandText}</NavbarBrand>
           </div>
         </Container>
       </Navbar>
+        </div>
     );
   }
 }

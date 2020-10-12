@@ -1,0 +1,9 @@
+.languages-align {
+    width: 256px;
+}
+
+@media screen and (max-width: 744px) {
+    .languages-align {
+        width: 168px;
+    }
+}
